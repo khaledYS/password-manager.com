@@ -1,0 +1,174 @@
+.signedin-div{
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.signedin-div > .search-bar {
+    position: relative;
+    height: 8%;
+}
+.signedin-div > .search-bar > input[type='text'] {
+    color: black;
+    box-shadow: 0 0 20px 1px;
+    font-size: x-large;
+    height: 100%;
+    width: 100vw;
+    padding: 10px 10px 10px 20px ;
+    text-align: left;
+    border: 5px solid #d4d240;
+    border-radius: 10px;
+    outline: none;
+}
+.signedin-div > .search-bar > input[type='text']:focus{
+    outline: none;
+    border: 5px solid #d4d240;
+}
+.signedin-div > .search-bar > [data-search-deleter]{
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 10%;
+    outline: none;
+    background: #05b0db;
+    border: none;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.signedin-div > .Accounts {
+    height: calc(100% - (5% + 8%));
+    padding-top:1px;
+    position: relative;
+}
+.signedin-div > .Accounts > .open-custom-search {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    appearance: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 30px;
+    border-radius:  10px 10px 0 10px;
+    background: #287ca0;
+    border: none;
+    outline: none; 
+    transform: translateX(80%);
+    transition: .4s all ease-in-out, 1s transform ease-in-out;
+}
+.signedin-div > .Accounts > .open-custom-search:hover{
+    text-shadow: -5px 2px 5px black;
+    transform: translateX(0%);
+    padding: 10px 10px 10px 10px;
+    border-radius:  0 10px 10px 10px;
+}
+
+.signedin-div > .bottom-bar{
+    background: linear-gradient(to right bottom, #287ca0, #287ca0, #961e56);
+    box-shadow: 0 0 20px 0px black;
+    height: 5%;
+}
+.signedin-div > .bottom-bar > .add-data-btn{
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    background: #ffbf10;
+    color: #333;
+    font-weight: 500;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    height: 70px;
+    width: 80px;
+    border: 1.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.customSearch{
+    background-color: #287ca0;
+    color: #000;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    grid-gap: 2rem;
+    grid-gap: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+    z-index: 9;
+    width: 80vw;
+    height: 70vh;
+    margin: 30px auto;
+    border: 7px solid #000;
+    position: relative;
+}
+.customSearch > span {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-weight: 900;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+.customSearch > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.customSearch > div > select{
+    cursor: pointer;
+    appearance: none;
+    background: #dadada;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid #000;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.customSearch > div > select:nth-child(1){
+    margin-bottom: 10px;
+}
+.customSearch > div >  select > option{
+    color: black;
+    font-weight: 700;
+}
+.customSearch > button{
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: inset 0px 0px 6px 0px black;
+    height: 10%;
+    width: 100%;
+    outline: none;
+    background: #bd2020;
+    border: none;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 auto;
+    color: #f1f1f1;
+    margin-top: 20px;
+}
